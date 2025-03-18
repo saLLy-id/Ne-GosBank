@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <svg id="gosbank-logo" width="180" height="50" viewBox="0 0 180 50">
+                    <circle cx="25" cy="25" r="15" fill="#0099cc" />
+                    <circle cx="25" cy="25" r="10" fill="#ffffff" />
+                    <circle cx="25" cy="25" r="5" fill="#0099cc" />
+                    
+                    <text x="50" y="32" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#0099cc">GosBank</text>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">база</a></li>
+                    <li><a href="about.html">кто мы такие?</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline">я местный</button>
+                <button id="register-btn" class="btn btn-primary">первый раз тут</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>ВНИМАНИЕ! НА ЭТОМ САЙТЕ ОЧЕНЬ МНОГО ПЛОХИХ СЛОВ<span class="highlight">  если вы монашка не смотрите пожалуйста</span></h1>
+                    <button id="start-now-btn" class="btn btn-primary btn-large">я не монашка</button>
+                </div>
+                <div class="hero-image">
+                    <div class="card-3d">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <div class="card-chip"></div>
+                                <div class="card-number" id="display-card-number">теперь ты наш слоняра •••• •••• 228ххх</div>
+                                <div class="card-holder">
+                                    <span class="label">Владелец</span>
+                                    <span class="value" id="display-card-holder">PHP developer?</span>
+                                </div>
+                                <div class="card-expiry">
+                                    <span class="label">Срок действия</span>
+                                    <span class="value" id="display-card-expiry">00/00</span>
+                                </div>
+                                <div class="card-logo">
+                                    <svg width="120" height="40" viewBox="0 0 180 50">
+                                        <circle cx="25" cy="25" r="15" fill="#ffffff" />
+                                        <circle cx="25" cy="25" r="10" fill="#0099cc" />
+                                        <circle cx="25" cy="25" r="5" fill="#ffffff" />
+                                        
+                                        <text x="50" y="32" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#ffffff">GosBank</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-magnetic-strip"></div>
+                                <div class="card-cvv">
+                                    <span class="label">наш слоняра</span>
+                                    <span class="value" id="display-card-cvv">xxx</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-form" id="card-form">
+                        <h3>сначала введите данные карты вашей мамы</h3>
+                        <div class="form-group">
+                            <label for="card-number">Номер карты</label>
+                            <input type="text" id="card-number" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-holder">Владелец карты</label>
+                            <input type="text" id="card-holder" name="cardHolder" placeholder="IVAN PETROV" maxlength="30" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="card-expiry">Срок действия</label>
+                                <input type="text" id="card-expiry" name="cardExpiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="card-cvv">CVV (три маленьких цифры с обратной стороны, которые нельзя никому говорить)</label>
+                                <input type="password" id="card-cvv" name="cardCvv" placeholder="XXX" maxlength="3" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">сосать</button>
+                    </div>
+                </div>
+            </section>
+            <section class="svo-banner">
+                <div class="banner-content">
+                    <div class="banner-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="banner-text">
+                        <h2>Льготы для участников СВО и патриотов</h2>
+                        <p>Разовая выплата 2 000 000 рублей для участников специальной военной операции и фанатов Шамана</p>
+                        <a href="#" class="btn btn-primary">люлблю Екатерину Мизулину</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>почему мы?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Безопасность</h3>
+                        <p> спишим ваши деньги раньше вас </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>высоколафицированные сотрудники</h3>
+                        <p>3 студентки уртк</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="testimonials">
+            <h2>Отзывы наших клиентошек</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Екатерина Смирнова">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">потеряла доступ к карте, какой то умник сменил от нее пароль и отвязал мой номер, техподдержка посоветовала свечку в храме поставить</p>
+                        <p class="testimonial-author">Екатерина Смирнова</p>
+                        <p class="testimonial-position">атеистка</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Дмитрий Петров">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">только зарегался как тутже карту спиздили, не успел ее блокнуть, взяли кредит, все сука деньги списали</p>
+                        <p class="testimonial-author">Дмитрий Петров</p>
+                        <p class="testimonial-position">слушает dj trippie flameboy</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Ольга Козлова">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">хотела взять кредит в GosBanke, в итоге его взяли на меня</p>
+                        <p class="testimonial-author">Ольга Козлова</p>
+                        <p class="testimonial-position">стала монашкой</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Сергей Николаев">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">скомуниздели карту, расстрелять</p>
+                        <p class="testimonial-author">Сергей Николаев</p>
+                        <p class="testimonial-position">историк, 40+лет хранит паспорт СССР, играет в Atomic Heart</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Анна Соколова">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text"> Потеряла квартиру </p>
+                        <p class="testimonial-author">Анна Соколова</p>
+                        <p class="testimonial-position">не пьёт colazero, слушает ТОЛЬКО отечественную музыку</p>
+                    </div>
+                </div>
+            <div class="testimonials-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+      
+        <div id="register-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>сначала введите данные карты вашей мамы</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="fullName">ФИО</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Номер карты</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="expiryDate">Срок действия</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="cvv">CVV</label>
+                            <input type="password" id="cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">хочу стать успеШным</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Вход в GosBank</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-cardNumber">Номер карты</label>
+                        <input type="text" id="login-cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="login-expiryDate">Срок действия</label>
+                            <input type="text" id="login-expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="login-cvv">CVV</label>
+                            <input type="password" id="login-cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">я  на все согласен</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg id="gosbank-logo-footer" width="120" height="35" viewBox="0 0 180 50">
+                        <circle cx="25" cy="25" r="15" fill="#ffffff" />
+                        <circle cx="25" cy="25" r="10" fill="#0099cc" />
+                        <circle cx="25" cy="25" r="5" fill="#ffffff" />
+                        
+                        <text x="50" y="32" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#ffffff">GosBank</text>
+                    </svg>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>О банке</h4>
+                        <ul>
+                            <li><a href="about.html#leadership">шишки этой канторы</a></li>
+                            <li><a href="about.html#press"></a>пинтерест</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li><a href="services.html">хочу в рабство</a></li>
+                            <li><a href="services.html">заложить друга \ подругу</a></li>
+                            <li><a href="services.html">поделится картой</a></li>
+                            <li><a href="services.html">перепродать чужую почку</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="none45.html" class="scam-button">не нажимай</a>
+                <p>&copy; 2025 не GosBank. это просто шутка  | Основатель: <span class="founder-name">saLLy</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
